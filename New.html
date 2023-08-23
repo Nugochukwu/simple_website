@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        ul{
+
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            display: inline-block;
+           background-color: grey;
+           border-radius: 3px;
+           padding: 5px;
+           margin-left: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+        li:hover {
+        background-color: rgb(0, 255, 238);
+
+        }
+        .feature-box{
+            display: flex;
+        }
+        .feature-box div {
+            margin: 1px;
+            width: 100%;
+        }
+        .feature-box.sales div{
+            background-color: grey;
+        }
+        .feature-box.closeouts div{
+            background-color: rgb(224, 3, 3);
+        }
+        li:first-child{
+            margin-left: 0;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Locations.html">Locations</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="New.html">New</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <section class="feature-box sales">
+        <div>Section a</div>
+        <div>Section b</div>
+        <div>Section c</div>
+    </section>
+    <section class="feature-box closeouts">
+        <div>section d</div>
+        <div>section e</div>
+    </section>
+    
+</body>
+</html>
