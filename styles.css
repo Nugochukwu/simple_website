@@ -29,7 +29,7 @@ body {
     height: 900px;
     margin: 100px 100px;
     padding: 100px;
-    display: flex;
+    display: flex; 
     flex-direction: row;
     color: rgb(0, 0, 0);
     width: 700px;
@@ -47,7 +47,29 @@ div {
     display: inline-block;
     color: white;
     margin: auto; 
+    display: flex;
     border-radius: 3px;
+    flex-direction: row;
+    padding: 20px;
+}
+.features{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: auto;
+    
+}
+.features figure{
+    background-color: rgb(255, 255, 255);
+    list-style-type: none;
+    text-align: center;
+    width: 200px;
+    text-transform: uppercase;
+}
+.features figure img{
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgb(79, 79, 79) 0 0 10px;
+    width: 200px;
+    border-radius: 50%;
 }
 footer {
     background: rgb(0, 0, 0);
@@ -91,12 +113,14 @@ li {
     display: inline-block;
     margin-left: 10px; 
     text-decoration-color: aqua;
+    text-size-adjust: 100px;
 }
 li:hover {
     border-radius: 3px;
 }
 
 ul {
+    font-size: 30px;
     padding: none;
     list-style-type: none;
     display: inline-block;
