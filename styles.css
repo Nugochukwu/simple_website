@@ -22,17 +22,18 @@ body {
 }
 .bread2{
     background: rgb(0, 0, 0);
-    background-image: url("images/Spot.jpg");
+   /* background-image: url("images/Spot.jpg");*/
+    background-image: url("gifs/TheSpot.gif");
     background-repeat: no-repeat;
-    background-size: 30%;
+    border-radius: 0px;
+    background-size: 60%;
     background-position: center;
-    border-radius: 50px;
-    height: 1000px;
-    padding: none;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    color: rgb(0, 0, 0);
+    color: white;
+    height: 500px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+
 }
 .column {
     padding: 10px;
