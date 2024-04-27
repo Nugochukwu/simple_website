@@ -114,7 +114,7 @@ header .HomeGif {
     background-position: center;
     color: white;
     height: 300px;
-    margin: 5px;
+    margin: 10px;
     padding: 0px;
     text-align: center; 
 }
@@ -132,19 +132,31 @@ strong {
     text-align: center;
 }
 section .logo a{
-    background-image: url("images/Spider.jpg");
+    background-image: url("gifs/Spider_Verse_Portal.gif");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 220%;
     background-position: center;
-    border-radius: 50%;
-    box-shadow: white 0 0 10px;
-    border: 2px solid rgb(80, 79, 79);
-    top: -20px;
+    border-radius: 100%;
+    box-shadow: rgb(128, 68, 249) 0 0 10px;
+    border: 2px solid rgb(110, 66, 255);
+    /*top: -20px;*/
     position: relative;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     text-indent: -999999999999px;
     display: inline-block;
+}
+section .logo a:hover{
+   
+    background-size: 220%;
+    background-position: center;
+    border-radius: 100%;
+    box-shadow: rgb(81, 46, 255) 0 0 10px;
+    border: 2px solid rgb(255, 255, 255);
+   
+    height: 150px;
+    width: 150px;
+  
 }
 li {
     display: inline-block;
