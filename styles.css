@@ -4,35 +4,33 @@ a {
 }
 body {
     background: rgb(0, 0, 0);
-    padding: 0;
-    height: 700px;
+    padding: none;
+    height: 900px;
     margin: auto;
+    width: 1300px;
 }
 .bread{
-    background: rgb(0, 0, 0);
     background-image: url("images/Dimensions2.jpg");
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center;
     height: 700px;
-    padding: none;
     margin: auto;
     display: flex;
     flex-direction: row;
     color: rgb(0, 0, 0);
 }
 .bread2{
-    background: rgb(0, 0, 0);
    /* background-image: url("images/Spot.jpg");*/
     background-image: url("gifs/TheSpot.gif");
     background-repeat: no-repeat;
-    border-radius: 100%;
-    background-size: 100%;
+    border-radius: 10%;
+    background-size: 100% solid;
     background-position: center;
     color: white;
-    height: 600px;
+    height: 500px;
     width: 100%;
-    margin: 50px;
+    margin: auto;
     padding: 30px;
     text-align: center;
 
@@ -43,17 +41,14 @@ body {
   }
 .Division1{
 background-color: rgb(0, 0, 0);
-border: 5px solid;
-border-color:rgb(67, 12, 118);
-border-radius: 0px;
+border-bottom: 5px solid rgb(255, 111, 255);
 padding: 10px;
-height: 100px;
-margin: 10px;
-text-align: center;
+height: 150px;
+margin: auto;
+text-align: left;
 }
 div {
     background: rgb(0, 51, 255);
-    border-radius: 5px;
     display: inline-block;
     color: white;
     margin: auto; 
@@ -80,6 +75,13 @@ div {
 .features a:hover{
     color: rgb(100, 86, 251);
 }
+.features img:hover {
+    background-size: 220%;
+    background-position: center;
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+}
 .features a:link {
     color: rgb(255, 255, 255);
     background-color: transparent;
@@ -87,15 +89,13 @@ div {
   }
 .features figure img{
     display: inline-block;
-    border: 2px solid rgb(255, 255, 255);
     box-shadow: rgb(94, 7, 123) 0 0 10px;
     width: 200px;
     border-radius: 100%;    
 }
 footer {
     background: rgb(0, 0, 0);
-    border: 3px solid;
-    border-color: rgb(0, 0, 0);
+    
     padding: 20px 20px;
     color: white;
     text-align: center;
@@ -111,12 +111,12 @@ header{
     background: rgb(0, 0, 0);
     background-image: url("gifs/falling.gif");
     background-repeat: no-repeat;
-    border-radius: 10px;
+    border-radius: 1px;
     background-size: 100%;
     background-position: center;
     color: white;
-    height: 600px;
-    margin: 10px;
+    height: 460px;
+    margin: auto;
     padding: 0px;
     text-align: center; 
 }
@@ -129,7 +129,7 @@ header .a {
   }
   
 strong {
-    margin: 10px;
+    margin: auto;
     padding: 10px;
     text-align: center;
 }
@@ -139,8 +139,6 @@ section .logo a{
     background-size: 220%;
     background-position: center;
     border-radius: 100%;
-    box-shadow: rgb(255, 255, 255) 0 0 10px;
-    border: 2px solid rgb(255, 255, 255);
     /*top: -20px;*/
     position: relative;
     height: 70px;
@@ -152,22 +150,35 @@ section .logo a:hover{
     background-size: 220%;
     background-position: center;
     border-radius: 100%;
-    box-shadow: rgb(109, 80, 255) 0 0 10px;
-    border: 2px solid rgb(200, 145, 255);
-   
     height: 150px;
     width: 150px;
 
 }
+.img:hover{
+    background-size: 220%;
+    background-position: center;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+}
 li {
-    display: inline-block;
-    margin-left: 10px; 
+    display: ruby-base;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
     text-decoration-color: aqua;
     text-size-adjust: 100px;
-    
+    border-right: 5px solid rgb(255, 111, 255);
 }
 li:hover {
     border-radius: 3px;
+    background-color: rgb(14, 13, 13);
+    color: rgb(100, 86, 251);
+}
+li a:hover {
+    
+    color: rgb(100, 86, 251);
 }
 
 ul {
