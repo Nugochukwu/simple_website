@@ -8,6 +8,8 @@ body {
     height: 900px;
     margin: auto;
     width: 1300px;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    border-top: 5px solid rgb(0, 0, 0);
 }
 .bread{
     background-image: url("images/Dimensions2.jpg");
@@ -19,6 +21,7 @@ body {
     display: flex;
     flex-direction: row;
     color: rgb(0, 0, 0);
+    
 }
 .bread2{
    /* background-image: url("images/Spot.jpg");*/
@@ -97,7 +100,9 @@ footer {
     padding: 5px 50px;
     color: white;
     text-align: center;
-
+    border: 5px solid rgb(255, 111, 255);
+    border-top: 5px solid rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(0, 0, 0);
 }
 h1 {
     padding: 100px;
@@ -110,6 +115,7 @@ header{
     background-image: url("gifs/falling.gif");
     background-repeat: no-repeat;
     border-radius: 1px;
+    border: 5px solid rgb(255, 111, 255);
     background-size: 100%;
     background-position: center;
     color: white;
@@ -160,7 +166,7 @@ li {
     text-align: center;
     text-decoration-color: aqua;
     text-size-adjust: 100px;
-    border-right: 5px solid rgb(255, 111, 255);
+    border-right: 50px solid rgb(255, 111, 255);
 }
 li:hover {
     border-radius: 3px;
