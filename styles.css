@@ -92,7 +92,8 @@ div {
 .features figure img{
     display: inline-block;
     box-shadow: rgb(94, 7, 123) 0 0 10px;
-    width: 200px;
+    height: 200px;
+    width: 160px;
     border-radius: 100%;    
 }
 footer {
@@ -136,6 +137,7 @@ strong {
     margin: auto;
     padding: 10px;
     text-align: center;
+    font-size: xx-large;
 }
 section .logo a{
     background-image: url("gifs/Spider_Verse_Portal.gif");
