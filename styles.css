@@ -39,7 +39,6 @@ body {
 }
 .column {
     padding: 10px;
-  /*border: 1px solid #ccc;*/
   }
 .Division1{
 background-color: rgb(0, 0, 0);
@@ -60,6 +59,7 @@ div {
     padding: 20px;
 }
 .features{
+    border:5px solid rgb(255, 111, 255);
     background-color: rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     margin: auto;
@@ -71,8 +71,8 @@ div {
     color: #ffffff;
     list-style-type: none;
     text-align: center;
-    width: 200px;
     text-transform: uppercase;
+    width: 200px;
 }
 .features a:hover{
     color: rgb(100, 86, 251);
@@ -81,8 +81,8 @@ div {
     background-size: 220%;
     background-position: center;
     border-radius: 100%;
-    height: 250px;
-    width: 250px;
+    height: 260px;
+    width: 230px;
 }
 .features a:link {
     color: rgb(255, 255, 255);
@@ -92,8 +92,8 @@ div {
 .features figure img{
     display: inline-block;
     box-shadow: rgb(94, 7, 123) 0 0 10px;
-    height: 200px;
-    width: 160px;
+    height: 210px;
+    width: 180px;
     border-radius: 100%;    
 }
 footer {
@@ -128,9 +128,14 @@ header{
 header .a {
     text-transform: uppercase;
 }
+header.figure{
+    border: 5px solid rgb(255, 111, 255);
+    height: auto;
+    width: auto;
+}
 .row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   
 strong {
@@ -139,26 +144,22 @@ strong {
     text-align: center;
     font-size: xx-large;
 }
-section .logo a{
-    background-image: url("gifs/Spider_Verse_Portal.gif");
-    background-repeat: no-repeat;
-    background-size: 220%;
-    background-position: center;
-    border-radius: 100%;
-    /*top: -20px;*/
-    position: relative;
-    height: 70px;
-    width: 70px;
-    text-indent: -999999999999px;
+section .logo img{
+    background-size: 200%;
     display: inline-block;
+    box-shadow: rgb(92, 89, 92) 0 0 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%; 
+    transform: scale(1);
 }
-section .logo a:hover{
-    background-size: 220%;
+section .logo img:hover{
+    background-size: 100%;
     background-position: center;
     border-radius: 100%;
+    color: rgb(255, 255, 255);
     height: 150px;
     width: 150px;
-
 }
 li {
     display: ruby-base;
@@ -167,19 +168,11 @@ li {
     padding-right: 50px;
     text-align: center;
     text-decoration-color: aqua;
-    text-size-adjust: 100px;
     border-right: 50px solid rgb(255, 111, 255);
 }
-li:hover {
-    border-radius: 3px;
-    background-color: rgb(14, 13, 13);
-    color: rgb(100, 86, 251);
-}
 li a:hover {
-    
     color: rgb(100, 86, 251);
 }
-
 ul {
     font-size: 30px;
     padding: none;
@@ -187,5 +180,16 @@ ul {
     display: inline-block;
     color: rgb(255, 255, 255);
 }
+ul .logo {
+    color: rgb(0, 0, 0);
+    border-right: 50px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+ul .logo:hover{ 
+    color: rgb(255, 255, 255);
+}
+
 
 
