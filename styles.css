@@ -136,7 +136,7 @@ header.figure{
 .row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  }
+}
   
 strong {
     margin: auto;
@@ -192,4 +192,5 @@ ul .logo:hover{
 }
 
 
-
+/*Make the character images by scaling
+ them up better on the phone screen*/
