@@ -12,22 +12,23 @@ body {
     overflow-x: hidden;
 }
 .btn-secondary {
-    background-color: #7dc884; 
-    color: white;
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    animation: fadeInUp 2s ease-in-out;
-}
-.btn-secondary:hover {
-    background-color: #5f9b66; 
-    width: 50px;
-    transform: scale(1.2);
-    padding: 15px 25px;
-}
+            background-color: #639a69; 
+            color: white;
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        .btn-secondary:hover {
+            background-color: #75be7e; 
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
+            width: 50px;
+            transform: scale(1.2);
+            padding: 15px 25px;
+        }
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -41,15 +42,15 @@ font-size: 16px;
     transform: scale(1.2);
 }
 .header {
-    background-color: #5d6b93;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #7b9acc, #5d6b93);
+    
     padding: 15px 0;
     padding-left: 50px;
     position: fixed;
     width: 100%;
     z-index: 100;
     top: 0;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .navbar-scroll {
@@ -113,6 +114,7 @@ scroll-behavior: smooth;
 .features h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 .feature-grid {
@@ -144,11 +146,13 @@ scroll-behavior: smooth;
 
 .feature-box.active {
     pointer-events: auto;
+    
    
 }
 .feature-box.show {
+    opacity: 1;
     pointer-events: auto;
-            transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 1s ease, transform 1s ease;
 }
 .icon {
     font-size: 40px;
@@ -172,7 +176,7 @@ scroll-behavior: smooth;
     text-align: center;
 }
 .to-top{
-    background-color: #5a67d8;
+    background-color: #5ad89b;
     position: fixed;
     bottom: 10px;
     right: 32px;
@@ -266,7 +270,7 @@ blockquote {
 }
 
 footer {
-    background-color: #3b2c47;
+    background: linear-gradient(to right, #7b9acc, #5d6b93);
     color: white;
     text-align: center;
     padding: 20px 0;

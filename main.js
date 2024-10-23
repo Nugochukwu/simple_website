@@ -10,18 +10,24 @@ window.addEventListener("scroll", () => {
 })
 
 window.addEventListener("scroll", () => {
+    // Iterate through each heading element
     headings.forEach((box, index) => {
-        if (window.pageYOffset < 900) {
+        // Calculate the position of each heading plus 100 pixels
+        const boxOffset = box.offsetTop + box.offsetHeight + 800;
+
+        // Check if the scroll position is beyond 100 pixels below the heading
+        if (window.pageYOffset > boxOffset) {
+            // Add 'active' and 'show' classes with a delay for each heading
             box.classList.add("active");
             box.classList.add('show');
+            
         } else {
+            // Remove the classes when scrolling above the heading
             box.classList.remove("active");
             box.classList.remove('show');
         }
-        
         setTimeout(() => {
             box.classList.add('show');
-        }, index * 500); // Add a delay for each heading
+        }, index * 200); // Delay for staggered animation effect
     });
 });
-    
