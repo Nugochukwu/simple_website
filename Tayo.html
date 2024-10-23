@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>OrbytPay - Revolutionizing Cross-Border Payments in Africa</title>
     <link rel="stylesheet" href="orbyt1.css">
@@ -16,23 +18,6 @@
             padding: 0;
             text-align: center;
             overflow-x: hidden;
-        }
-        .header {
-            background: #5d6b93; 
-            padding: 15px;
-            color: white;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo h1 {
-            font-size: 28px; 
         }
         .btn-secondary {
             background-color: #9b7dc8; 
@@ -152,17 +137,15 @@
             margin: 8px 0; 
         }
         
-        footer {
-            background-color: #3b2c47; 
-            color: #fff;
-            padding: 15px; 
-            text-align: center;
-        }
+       
     </style>
 </head>
 <body>
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up "></i>  
+    </a>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar-scroll">
             <div class="logo">
                 <h1>OrbytPay</h1>
             </div>
@@ -245,7 +228,13 @@
 
     <footer>
         <p>&copy; 2024 OrbytPay. All Rights Reserved.</p>
+              
+
+           
+        </div><!--/.scroll-Top-->
     </footer>
+    
+<script src="main.js"></script>
 
     <script>
         // Reveal feature boxes with delay
