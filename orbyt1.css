@@ -11,7 +11,23 @@ body {
     color: #333;
     overflow-x: hidden;
 }
-
+.btn-secondary {
+    background-color: #7dc884; 
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 2s ease-in-out;
+}
+.btn-secondary:hover {
+    background-color: #5f9b66; 
+    width: 50px;
+    transform: scale(1.2);
+    padding: 15px 25px;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;

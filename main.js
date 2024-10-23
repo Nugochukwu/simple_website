@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("scroll", () => {
     headings.forEach((box, index) => {
-        if (window.pageYOffset < 500) {
+        if (window.pageYOffset < 900) {
             box.classList.add("active");
             box.classList.add('show');
         } else {
