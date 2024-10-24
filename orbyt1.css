@@ -32,6 +32,76 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+.country-section {
+    display: flex;
+   justify-content: center;
+    margin-left: 0%;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+   width: 100%;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 20px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+}
+.country-section h2{
+
+}
+.country-card-box {
+    display: flex;
+    justify-content: center;
+   
+    padding: 10px;
+    
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    margin: 20px auto; 
+    width: 100%s;
+    animation: slide 30s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(60%);
+    }
+    20%{
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(-25%);
+    }
+    40%{
+        transform: translateX(-25%);
+    }
+    60%{
+        transform: translateX(-60%);
+    }
+    75%{
+        transform: translateX(-25%);
+    }
+    100%{
+        transform: translateX(60%);
+    }
+    
+}
+img{
+    width: 100%;
+}
+.country-card {
+    font-size: 20px; 
+    margin: 20px; 
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+    width: 100%;
+}
+
+.country-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .hero-content a {
 font-size: 16px;
@@ -192,7 +262,7 @@ scroll-behavior: smooth;
 @media (max-width: 768px) {
     .btn-secondary:hover {
         background-color: #75be7e; 
-        box-shadow: 0 4px 8px rgba(234, 94, 47, 0.943);
+        box-shadow: 0 4px 8px rgba(47, 234, 153, 0.943);
         padding: 15px 25px;
     }
     .leader {
