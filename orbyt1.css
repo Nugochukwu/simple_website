@@ -64,7 +64,7 @@ body {
 }
 @keyframes slide{
     0%{
-        transform: translateX(60%);
+        transform: translateX(40%);
     }
     20%{
         transform: translateX(0%);
@@ -73,16 +73,16 @@ body {
         transform: translateX(-25%);
     }
     40%{
-        transform: translateX(-25%);
-    }
-    60%{
         transform: translateX(-60%);
     }
-    75%{
+    60%{
         transform: translateX(-25%);
     }
+    75%{
+        transform: translateX(0%);
+    }
     100%{
-        transform: translateX(60%);
+        transform: translateX(40%);
     }
     
 }
@@ -237,6 +237,7 @@ scroll-behavior: smooth;
     max-width: 50%; /* Control the width of each leader */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 50px;
+    margin-bottom: 10px;
 }
 .leader:hover {
     transform: translateY(-5px) scale(1.05); /* Combined translate and scale */
