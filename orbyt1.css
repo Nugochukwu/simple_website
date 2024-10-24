@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 }
 .btn-secondary {
-            background-color: #639a69; 
+            background-color: #73b07a; 
             color: white;
             margin: 10px;
             padding: 10px 20px;
@@ -24,9 +24,7 @@ body {
         }
         .btn-secondary:hover {
             background-color: #75be7e; 
-            box-shadow: 0 4px 8px rgb(0, 0, 0);
-            width: 50px;
-            transform: scale(1.2);
+            box-shadow: 0 4px 8px rgba(47, 234, 153, 0.233);
             padding: 15px 25px;
         }
 .container {
@@ -88,7 +86,7 @@ font-size: 16px;
 }
 
 .hero {
-    background-color: #5a67d8;
+
     color: white;
     padding: 140px 20px;
     text-align: center;
@@ -141,7 +139,7 @@ scroll-behavior: smooth;
 
 .feature-box:hover {
     transform: translateY(-5px) scale(1.05); /* Combined translate and scale */
-    box-shadow: 0 5px 10px rgba(35, 202, 29, 0.333);
+    box-shadow: 0 4px 8px rgba(47, 234, 153, 0.233);
 }
 
 .feature-box.active {
@@ -383,6 +381,6 @@ footer {
     }
 
     #nav-links.active {
-        display: flex;
+        display: flex;
     }
 }

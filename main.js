@@ -1,7 +1,7 @@
 const toTop = document.querySelector(".to-top");
 const headings = document.querySelectorAll(".feature-box");
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 1) {
+    if (window.pageYOffset > 20) {
         toTop.classList.add("active");
     }else{
         toTop.classList.remove("active");
@@ -13,7 +13,7 @@ window.addEventListener("scroll", () => {
     // Iterate through each heading element
     headings.forEach((box, index) => {
         // Calculate the position of each heading plus 100 pixels
-        const boxOffset = box.offsetTop + box.offsetHeight + 800;
+        const boxOffset = box.offsetTop + box.offsetHeight + 1000;
 
         // Check if the scroll position is beyond 100 pixels below the heading
         if (window.pageYOffset > boxOffset) {

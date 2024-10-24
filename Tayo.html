@@ -21,6 +21,8 @@
         }
         
         .hero {
+            background: url('john-mcarthur-ROQzKIAdY78-unsplash_480x480.webp') center/cover no-repeat; /* Use the CEO image */
+            
             background: linear-gradient(to right, #7b9acc, #5d6b93); 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.441);
             color: white;
@@ -52,6 +54,7 @@
                 transform: translateY(0);
             }
         }
+        
         .features {
             padding: 40px 20px; 
             text-align: center;
@@ -73,6 +76,8 @@
             padding: 15px; 
             margin: 10px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            flex-basis: calc(60% - 60px); /* Make each box take up 50% of the row minus the gap */
+            max-width: 300px; /* Optional: Control the maximum width */
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 1s ease, transform 1s ease;
@@ -83,7 +88,7 @@
         }
         
         .country-section {
-            padding: 60px 20px;
+            padding: 10px 20px;
             background-color: #ffffff;
             text-align: center;
         }
@@ -92,8 +97,8 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            padding: 20px;
-            border: 2px solid #5d6b93; 
+            padding: 10px;
+            
             border-radius: 12px;
             background-color: rgba(255, 255, 255, 0.9); 
             margin: 20px auto; 
@@ -101,8 +106,8 @@
         }
 
         .country-card {
-            font-size: 50px; 
-            margin: 5px; 
+            font-size: 20px; 
+            margin: 20px; 
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.5s ease, transform 0.5s ease; 
@@ -131,7 +136,51 @@
         .importance-list li {
             margin: 8px 0; 
         }
-        
+        .messages-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Optional: Background color */
+    text-align: center;
+}
+
+.messages-section h2 {
+    padding: 20px;
+    font-size: 36px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leader-container{
+    display: flex;
+            justify-content: center;
+            flex-wrap: wrap;}
+.leader {
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 50%; /* Control the width of each leader */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
+.leader:hover {
+    transform: translateY(-5px) scale(1.05); /* Combined translate and scale */
+    box-shadow: 0 4px 8px rgba(47, 234, 153, 0.233);
+}
+.leader img {
+    width: 150px; /* Control the size of the image */
+    height: 150px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits within the circular shape */
+    margin-bottom: 15px;
+}
+
+.leader h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.leader p {
+    font-size: 16px;
+    line-height: 1.5;
+}
        
     </style>
 </head>
@@ -156,26 +205,26 @@
     </section>
 
     <section id="features" class="features">
-        <h2>OrbytPay Features</h2>
+        <h2>Our Key Features</h2>
         <div class="feature-container">
             <div class="feature-box">
                 <i class="fas fa-globe feature-icon"></i>
-                <h3>Global Coverage</h3>
+                <h3>Extensive Global Network</h3>
                 <p>Send and receive payments across 10+ African nations and global markets with ease.</p>
             </div>
             <div class="feature-box">
                 <i class="fas fa-lock feature-icon"></i>
-                <h3>Enhanced Security</h3>
+                <h3>Robust Security Measures</h3>
                 <p>Benefit from our top-tier encryption and AI-driven fraud protection for secure transactions.</p>
             </div>
             <div class="feature-box">
                 <i class="fas fa-mobile-alt feature-icon"></i>
-                <h3>Mobile Compatibility</h3>
+                <h3>Mobile-First Approach</h3>
                 <p>Manage your finances from any device through our intuitive Android and iOS mobile apps.</p>
             </div>
             <div class="feature-box">
                 <i class="fas fa-wallet feature-icon"></i>
-                <h3>Multi-Currency Support</h3>
+                <h3>Multi-Currency Transactions</h3>
                 <p>Switch between currencies effortlessly, enabling seamless international transactions.</p>
             </div>
             <div class="feature-box">
@@ -185,24 +234,39 @@
             </div>
             <div class="feature-box">
                 <i class="fas fa-credit-card feature-icon"></i>
-                <h3>Virtual Cards</h3>
-                <p>Get your virtual OrbytPay card today, available for 12 different currencies!</p>
+                <h3>Virtual Payment Cards</h3>
+                <p>Obtain a virtual card for online transactions, available in various currencies!</p>
             </div>
         </div>
     </section>
 
-    <section class="importance-section">
-        <h2>Importance of Cross-Border Payments</h2>
+    <section class="importance-section" id="importance">
+        <h2>Why Cross-Border Payments Matter</h2>
         <ul class="importance-list">
-            <li>Facilitates international trade and commerce.</li>
-            <li>Increases financial inclusivity across nations.</li>
-            <li>Promotes currency exchange efficiency.</li>
-            <li>Supports remittances and financial aid flows.</li>
+            <li>Drives economic growth through international trade.</li>
+            <li>Promotes financial inclusion in underserved regions.</li>
+            <li>Enhances efficiency in currency exchange.</li>
+            <li>Facilitates remittances and cross-border support.</li>
         </ul>
     </section>
 
-    <section class="country-section">
-        <h2>Countries We Support</h2>
+    <section class="messages-section" id="leaders">
+        <h2>Messages from Our Leaders</h2>
+        <div class="leader-container">
+            <div class="leader">
+                <img src="Screenshot 2024-10-23 at 12.05.50.png" alt="CEO">
+                <h3>Message from the CEO</h3>
+                <p>Welcome to OrbytPay! We are dedicated to creating a seamless and secure payment experience for our users across Africa. Together, we can drive financial inclusion and empower individuals and businesses alike.</p>
+            </div>
+            <div class="leader">
+                <img src="Screenshot 2024-10-22 at 23.43.16.png" alt="CTO">
+                <h3>Message from the CTO</h3>
+                <p>At OrbytPay, innovation is at our core. We leverage cutting-edge technology to ensure fast and secure transactions. Our mission is to redefine the way payments are made across borders, making them accessible to everyone.</p>
+            </div>
+        </div>
+    </section>
+    <section class="country-section" id="countries">
+        <h2>Supported Countries</h2>
         <div class="country-card-box">
             <div class="country-card">🇳🇬 Nigeria</div>
             <div class="country-card">🇿🇲 Zambia</div>
@@ -220,6 +284,7 @@
             <div class="country-card">🇬🇧 United Kingdom</div>
         </div>
     </section>
+
 
     <footer>
         <p>&copy; 2024 OrbytPay. All Rights Reserved.</p>
