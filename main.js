@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
                 box.classList.add("active");
                 setTimeout(() => {
                     box.classList.add('show');
-                }, index * 200); // Delay for staggered animation effect
+                }, index * 150); // Delay for staggered animation effect
             }
         } else {
             // Remove the classes when scrolling above the heading
