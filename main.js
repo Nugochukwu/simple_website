@@ -12,22 +12,22 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
     // Iterate through each heading element
     headings.forEach((box, index) => {
-        // Calculate the position of each heading plus 100 pixels
-        const boxOffset = box.offsetTop + box.offsetHeight + 1000;
+        // Calculate the position of each heading plus 500 pixels
+        const boxOffset = box.offsetTop + box.offsetHeight + 1;
 
-        // Check if the scroll position is beyond 100 pixels below the heading
-        if (window.pageYOffset > boxOffset) {
-            // Add 'active' and 'show' classes with a delay for each heading
-            box.classList.add("active");
-            box.classList.add('show');
-            
+        // Check if the scroll position is beyond 500 pixels below the heading
+        if (window.pageYOffset < boxOffset) {
+            if (!box.classList.contains('active')) {
+                // Add 'active' class and staggered 'show' class if not already present
+                box.classList.add("active");
+                setTimeout(() => {
+                    box.classList.add('show');
+                }, index * 200); // Delay for staggered animation effect
+            }
         } else {
             // Remove the classes when scrolling above the heading
             box.classList.remove("active");
             box.classList.remove('show');
         }
-        setTimeout(() => {
-            box.classList.add('show');
-        }, index * 200); // Delay for staggered animation effect
     });
 });
