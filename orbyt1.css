@@ -35,54 +35,49 @@ body {
 .country-section {
     display: flex;
    justify-content: center;
-    margin-left: 0%;
-    padding: 50px 20px;
+    padding: 10px 20px;
     background-color: #ffffff;
     text-align: center;
-   width: 100%;
-    top: 50%;
-    left: 50%;
+   margin-left: 25%;
+    width: 50%;
+   
     overflow: hidden;
-    border: 20px solid #ffffff;
+    border: 10px solid #ffffff;
     border-radius: 8px;
-    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+    
 }
-.country-section h2{
 
-}
 .country-card-box {
     display: flex;
     justify-content: center;
-   
     padding: 10px;
-    
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.9); 
     margin: 20px auto; 
-    width: 100%s;
+    width: 100%;
     animation: slide 30s infinite;
 }
 @keyframes slide{
     0%{
-        transform: translateX(40%);
+        transform: translateX(160%);
     }
     20%{
         transform: translateX(0%);
     }
     30%{
-        transform: translateX(-25%);
+        transform: translateX(-50%);
     }
     40%{
-        transform: translateX(-60%);
+        transform: translateX(-100%);
     }
     60%{
-        transform: translateX(-25%);
+        transform: translateX(-50%);
     }
     75%{
         transform: translateX(0%);
     }
     100%{
-        transform: translateX(40%);
+        transform: translateX(160%);
     }
     
 }
@@ -91,18 +86,26 @@ img{
 }
 .country-card {
     font-size: 20px; 
-    margin: 20px; 
+    padding: 20px; 
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease; 
-    width: 100%;
+    width: 50%;
 }
 
 .country-card.show {
     opacity: 1;
     transform: translateY(0);
 }
-
+.country-bar h2{
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    
+    text-align: center;
+    z-index: 9999;
+    
+    }
 .hero-content a {
 font-size: 16px;
 }
@@ -229,8 +232,8 @@ scroll-behavior: smooth;
 }
 .leader-container{
     display: flex;
-            justify-content: center;
-            flex-wrap: wrap;}
+    justify-content: center;
+    flex-wrap: wrap;}
 .leader {
     background-color: #fff;
     border-radius: 10px;
@@ -272,8 +275,21 @@ scroll-behavior: smooth;
     .leader:hover {
         box-shadow: 0 -10px 8px rgba(47, 234, 153, 0.4), /* Shadow at the top */
                 0 10px 8px rgba(47, 234, 153, 0.776); /* Shadow at the bottom */
-    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
-        
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */       
+}
+.country-section {
+    display: flex;
+   justify-content: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    text-align: center;
+   margin-left: 0%;
+    width: 100%;
+   
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    
 }
 }       
 .virtual-cards {
