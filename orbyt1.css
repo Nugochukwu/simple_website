@@ -157,7 +157,54 @@ scroll-behavior: smooth;
     color: #5a67d8;
     margin-bottom: 10px;
 }
+.leader-container{
+    display: flex;
+            justify-content: center;
+            flex-wrap: wrap;}
+.leader {
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 50%; /* Control the width of each leader */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
+.leader:hover {
+    transform: translateY(-5px) scale(1.05); /* Combined translate and scale */
+    box-shadow: 0 4px 8px rgba(47, 234, 153, 0.233);
+}
+.leader img {
+    width: 150px; /* Control the size of the image */
+    height: 150px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits within the circular shape */
+    margin-bottom: 15px;
+}
 
+.leader h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.leader p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .btn-secondary:hover {
+        background-color: #75be7e; 
+        box-shadow: 0 4px 8px rgba(234, 94, 47, 0.943);
+        padding: 15px 25px;
+    }
+    .leader {
+        max-width: 100%; /* On small screens, stack the leaders */
+    }
+    .leader:hover {
+        box-shadow: 0 -10px 8px rgba(47, 234, 153, 0.4), /* Shadow at the top */
+                0 10px 8px rgba(47, 234, 153, 0.776); /* Shadow at the bottom */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
+        
+}
+}       
 .virtual-cards {
     background-color: #f4f5f7;
     padding: 60px 20px;
